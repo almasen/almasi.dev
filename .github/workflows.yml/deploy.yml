@@ -1,7 +1,7 @@
 name: Web Deployment
-# Trigger on master branch changes
+
 on:
-  push: # run whenever something is merged into master
+  push:
     branches:
       - master
 
