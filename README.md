@@ -1,5 +1,7 @@
 # almasi.dev
-My very simple portfolio website
+My simple portfolio website.
+
+Just some plain HTML, CSS & JS.
 
 ## License
 
