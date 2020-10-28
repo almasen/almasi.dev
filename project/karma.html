@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Encrypted JSON Web Token authentication</title>
+    <meta name="description" content="Simple developer portfolio of Daniel Almasi">
+
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+
+    <style>
+        .anchor {
+            display: block;
+            height: 110px;
+            margin-top: -110px;
+            visibility: hidden;
+        }
+
+        .info a {
+            font-weight: bolder;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark portfolio-navbar">
+        <div class="container"><span class="navbar-brand logo">Daniel Almasi</span><button data-toggle="collapse"
+                class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactModal" role="button"
+                            data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page project-page">
+        <section class="portfolio-block project" style="padding-top: 70px;">
+            <div class="container">
+                <!-- <div class="heading">
+                    <h2>project name</h2>
+                </div> -->
+                <div class="image"
+                    style="background-image:url(&quot;../assets/img/projects/header/karma.webp&quot;);"></div>
+                <div class="row">
+                    <div class="col-12 col-md-7 offset-md-1 info">
+                        <span class="anchor" id="about"></span>
+                        <h3>Encrypted JSON Web Token authentication</h3>
+                        <h5>About Karma Volunteering</h5>
+                        <p>Karma Volunteering is a free platform that was created to find people power to support meaningful causes. Before and after COVID-19, communities have been coming together to support each other, including those who are the most vulnerable in our neighbourhoods. Karma was built with a simple mission: to make it easy to do good.</p>
+                        <h5>Background</h5>
+                        <p>Karma Volunteering started life as a student project at King's College London, conceived and designed by Danielle Dodoo and built by King's College Informatics students as the second-year major software engineering group project of their BSc programme.</p>
+                        <h5>Authentication & authorisation flow</h5>
+                        <p>I was responsible for the design and development of the user authentication and authorisation for the backend of Karma. This involved building both REST API endpoints with appropriate user access validation and logic modules for handling more advanced operations such as password resets and temporary access tokens.</p>
+                        <h5>Choice of Encrypted JSON Web tokens</h5>
+                        <p>As the development was part of our BSc software engineering project, it was encouraged to use methodologies that require R&D. I implemented the Karma server-side authentication and authorisation via serialised Encrypted JSON Web Tokens, i.e. via JWEs & JWTs.</p>
+                        <h5>Features of serialised JSON Web Encryption</h5>
+                        <p>JWEs provide a highly secure, lightweight and scalable communication channel. By utilising asymmetric encryption it is ensured that only the target client is able to access a token's contents as well as that the authenticity of the token remains intact. Furthermore, malicious users are unable to access, among other things, their database identifier or the structure and name of our authentication objects, providing an additional layer of security for the internal Karma system.<br><br></p>
+                        <span class="anchor" id="role"></span>
+                        <h3>Role</h3>
+                        <p>I was responsible for the design, development & testing of the server-side authentication and authorisation of users, including the Slack-like sign-up flow for new clients.<br><br></p>
+                        <span class="anchor" id="specs"></span>
+                        <h3>Technical specifications</h3>
+                        <p>• serialised Encrypted JSON Web Tokens (JWE & JWT)<br>
+                        • server & client JSON Web Signatures (JWS)<br>
+                        • session preservation controllable by admins<br>
+                        • token blacklisting<br>
+                        • HTTP request path based authorisation<br>
+                        • JSON Web Keystore (JWKS)<br>
+                        • switchable encryption method (symmetric vs asymmetric)<br><br></p>
+                        <span class="anchor" id="stack"></span>
+                        <h3>Used technologies</h3>
+                        <p>NodeJS, PostgreSQL, REST<br><br></p>
+                        <span class="anchor" id="references"></span>
+                        <h3>References</h3>
+                        <p>• Sample Open Source project showing server-side implementation of JWE authentication: <a href="https://github.com/almasen/encrypted-jwt-on-server" rel="noreferrer noopener" target="_blank">https://github.com/almasen/encrypted-jwt-on-server</a></p>
+                        <h5>Download links</h5>
+                        <p>Disclaimer: The Karma project Copyright © 2020 Karma Volunteering.<br>
+                        • Official project website: <a href="https://www.karmavolunteering.org" rel="noreferrer noopener" target="_blank">https://www.karmavolunteering.org</a><br>
+                        • To download the app from Google Play, <a href="https://play.google.com/store/apps/details?id=com.karmavolunteering.karma" rel="noreferrer noopener" target="_blank">visit the Play Store</a><br>
+                        • To download the app onto an Apple device, <a href="https://apps.apple.com/sk/app/karma-volunteering/id1515786264" rel="noreferrer noopener" target="_blank">visit the App Store</a></p>
+
+                    </div>
+                    <div class="col-12 col-md-3 offset-md-1 meta" style="padding-left: 0px;">
+                        <div class="tags">
+                            <span class="meta-heading">Tags</span>
+                            <a href="#about">About</a>
+                            <a href="#role">Role</a>
+                            <a href="#specs">Specs</a>
+                            <a href="#stack">Tech stack</a>
+                            <a href="#references">References</a>
+                            <span class="meta-heading">Date</span>
+                            <span>Jan - Apr 20</span>
+                            <span class="meta-heading">References</span>
+                            <a href="https://github.com/almasen/encrypted-jwt-on-server" rel="noreferrer noopener" target="_blank">Template GitHub repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    I can be contacted via the following channels:
+                    <div class="page-footer" style="border-top: unset; padding-top: 10px; padding-bottom: 5px;">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/danielmarkalmasi"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                rel="noreferrer noopener" target="_blank">
+                                <i class="icon ion-social-linkedin"></i>
+                            </a>
+                            <a href="javascript:getContactEmail();"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;">
+                                <i class="icon ion-email"></i>
+                            </a>
+                            <a href="https://github.com/almasen"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                rel="noreferrer noopener" target="_blank">
+                                <i class="icon ion-social-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <small class="form-text text-muted"><em>Please kindly note that for spam protection purposes, JavaScript is required for contact via email.</em></small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links">
+                <a href="../">Home</a>
+                <a href="../experience.html">Experience</a>
+                <a href="../projects.html">Projects</a>
+                <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener"
+                    target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/style.min.js"></script>
+
+
+    <script defer src="../assets/js/email.js"></script>
+    <script defer src="../assets/js/important.js"></script>
+</body>
+
+</html>

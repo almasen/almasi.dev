@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Almasi.dev</title>
+    <meta name="description" content="Simple developer portfolio of Daniel Almasi">
+
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .information a:hover {
+            color: #08c0c3 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark portfolio-navbar">
+        <div class="container"><span class="navbar-brand logo">Daniel Almasi</span><button data-toggle="collapse"
+                class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" style="color: #08c0c3;" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactModal" role="button"
+                            data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro" style="padding-bottom: 10%;">
+            <div class="container">
+                <div class="avatar" style="background-image:url(&quot;assets/img/avatar/avatar.webp&quot;);"></div>
+                <div class="about-me">
+                    <p><strong>Hello!</strong> My name is Daniel. I am an Undergraduate reading Computer Science at
+                        King's College London and am experienced in Software Engineering principles with a focus on
+                        Backend Development.</p><a class="btn btn-outline-primary" role="button"
+                        href="projects.html">Check out my simple portfolio</a>
+                </div>
+            </div>
+        </section>
+        <section class="information" style="padding-bottom: 2%;">
+            <div style="text-align: center;font-weight: 300;font-size: 1em;">
+                <p>This website is open source and so are many of my projects. <br><a href="https://github.com/almasen"
+                        rel="noreferrer noopener" target="_blank" style="color:unset;">Check me out on GitHub <i
+                            class="icon ion-social-github"></i></a>.</p>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact me</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        I can be contacted via the following channels:
+                        <div class="page-footer" style="border-top: unset; padding-top: 10px; padding-bottom: 5px;">
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/danielmarkalmasi"
+                                    style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                    rel="noreferrer noopener" target="_blank">
+                                    <i class="icon ion-social-linkedin"></i>
+                                </a>
+                                <a href="javascript:getContactEmail();"
+                                    style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;">
+                                    <i class="icon ion-email"></i>
+                                </a>
+                                <a href="https://github.com/almasen"
+                                    style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                    rel="noreferrer noopener" target="_blank">
+                                    <i class="icon ion-social-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <small class="form-text text-muted"><em>Please kindly note that for spam protection purposes,
+                                JavaScript is required for contact via email.</em></small>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="links">
+                    <a href="./">Home</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener"
+                        target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+        <script defer src="assets/js/jquery.min.js"></script>
+        <script defer src="assets/js/style.min.js"></script>
+        <script defer src="assets/js/email.js"></script>
+        <script defer src="assets/js/important.js"></script>
+</body>
+
+</html>

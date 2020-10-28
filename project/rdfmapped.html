@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Researcher Development Framework Mapped</title>
+    <meta name="description" content="Simple developer portfolio of Daniel Almasi">
+
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+
+    <style>
+        .anchor {
+            display: block;
+            height: 110px;
+            margin-top: -110px;
+            visibility: hidden;
+        }
+        .info a {
+            font-weight: bolder;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark portfolio-navbar">
+        <div class="container"><span class="navbar-brand logo">Daniel Almasi</span><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactModal" role="button" data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page project-page">
+        <section class="portfolio-block project" style="padding-top: 70px;">
+            <div class="container">
+                <!-- <div class="heading">
+                    <h2>project name</h2>
+                </div> -->
+                <div class="image" style="background-image:url(&quot;../assets/img/projects/header/rdfmapped.webp&quot;);"></div>
+                <div class="row">
+                    <div class="col-12 col-md-7 offset-md-1 info">
+                        <span class="anchor" id="about"></span>
+                        <h3>About RDFmapped</h3>
+                        <h5>Researcher Development Framework Mapped</h5>
+                        <p>RDFmapped is based on a dataset which mapped <a href="https://www.vitae.ac.uk/researchers-professional-development/about-the-vitae-researcher-development-framework/developing-the-vitae-researcher-development-framework" rel="noreferrer noopener" target="_blank">Vitae’s Researcher Development Framework</a> against LinkedIn Learning resources. This mapping was completed by LinkedIn Learning in collaboration with Vitae and was originally in spreadsheet form. The aim of the <a href="https://rdfmapped.com"  rel="noreferrer noopener" target="_blank">rdfmapped.com</a> website is to make this dataset accessible, searchable and convenient for
+                        researchers.</p>
+                        <h5>Online learning material</h5>
+                        <p>RDFmapped features several advanced search options based on the Researcher Development Framework to provide researchers with a handy way of finding relevant online learning material. The courses & videos featured on RDFmapped are constantly being updated via the LinkedIn Learning API and users can also suggest relevant learning material that is automatically verified against the LinkedIn Learning database as well as the Vitae learning pathways. </p>
+                        <h5>'Suggested content' algorithm</h5>
+                        <p>RDFmapped uses its own unique algorithm to recommend further online courses to researchers by determining the relevant Vitae learning domain of the user. When a visitor checks out a recommended course, RDFmapped loads useful metadata from the LinkedIn Learning API so that the user can browse options without having to navigate away from the site.</p>
+                        <h5>Admin dashboard</h5>
+                        <p>RDFmapped also features a comprehensive admin dashboard, which is invisible to a regular user. Administrators of research institutions can, among other things, quickly edit the whole database of featured content, review user submissions and even edit static information, such as FAQ elements, without being required to have experience in programming.<br><br></p>
+                        <span class="anchor" id="role"></span>
+                        <h3>Role</h3>
+                        <p>I was responsible for the development, testing & deployment of the dynamic website whilst working as a software engineer at the <a href="https://www.kcl.ac.uk/doctoralstudies" rel="noreferrer noopener" target="_blank">Centre for Doctoral Studies, King's College London</a>. The project is released under the <a href="https://github.com/almasen/rdf-mapped/blob/master/LICENSE" rel="noreferrer noopener" target="_blank">MIT license</a> while its web resources <a href="https://creativecommons.org/licenses/by-nc/4.0" rel="noreferrer noopener" target="_blank">CC BY-NC 4.0</a>. RDFmapped now operates as on open source project actively maintained and sponsored by <a href="https://www.kcl.ac.uk/" rel="noreferrer noopener" target="_blank">King's College London</a>.<br><br></p>
+                        <span class="anchor" id="specs"></span>
+                        <h3>Technical specifications</h3>
+                        <p>• CI with automatically deployed Jest: <a href="https://dev.rdfmapped.com/coverage" rel="noreferrer noopener" target="_blank">99%+ test coverage</a><br>
+                        • HTTP Strict Transport Security <a href="https://hstspreload.org/?domain=rdfmapped.com" rel="noreferrer noopener" target="_blank">HSTS preloaded</a><br>
+                        • <a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Frdfmapped.com%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext" rel="noreferrer noopener" target="_blank">Google Chrome Lightouse 95+</a> score for all tests<br>
+                        • automatically deployed <a href="https://dev.rdfmapped.com/docs" rel="noreferrer noopener" target="_blank">module documentation</a><br>
+                        • user authentication via Encrypted JWTs<br>
+                        • automatic updating of LinkedIn Learning API content<br>
+                        • eslint & Codacy metrics<br>
+                        • TLS v1.3, <a href="https://www.ssllabs.com/ssltest/analyze.html?d=rdfmapped.com" rel="noreferrer noopener" target="_blank">A+ SSL Labs rating</a><br>
+                        • content served through HTTP/2 via brotli<br>
+                        • automatic issue creation via GitHub API<br><br></p>
+                        <span class="anchor" id="stack"></span>
+                        <h3>Used technologies</h3>
+                        <p>NodeJS, PostgreSQL, REST, EJS, HTML, CSS, Nginx, AWS<br><br></p>
+                        <span class="anchor" id="references"></span>
+                        <h3>References</h3>
+                        <h5>Project links</h5>
+                        <p>• RDFmapped is Open Source, check it out on <a href="https://github.com/almasen/rdf-mapped" rel="noreferrer noopener" target="_blank">GitHub</a>.<br>
+                        • View this project live at: <a href="https://rdfmapped.com" rel="noreferrer noopener" target="_blank">https://rdfmapped.com</a>.</p>
+                        <h5>Support RDFmapped</h5>
+                        <p>• To support this project financially please refer to the <a
+                                href="https://github.com/almasen/rdf-mapped#supporting-rdfmapped" rel="noreferrer noopener"
+                                target="_blank">Sponsorship Information</a><br>
+                        • To submit content to be featured on the site, please use the <a href="https://rdfmapped.com/submit" rel="noreferrer noopener" target="_blank">Learning Object submission form</a>.<br>
+                        • If you are interested in contributing code, please take a look at the <a href="https://github.com/almasen/rdf-mapped#contribute" rel="noreferrer noopener" target="_blank">Contribute section</a> of the project readme.
+                        </p>
+                        <h5>Contact</h5>
+                        <p>• You can contact the administrators of the website via the <a href="https://rdfmapped.com/contact" rel="noreferrer noopener" target="_blank">contact form</a>.</p>
+                        <h5>Development site</h5>
+                        <p>• Deployed development site: <a href="https://dev.rdfmapped.com" rel="noreferrer noopener" target="_blank">https://dev.rdfmapped.com</a> <br>(this isn't the dev tree, it holds dev docs & test coverage)</p>
+
+                    </div>
+                    <div class="col-12 col-md-3 offset-md-1 meta" style="padding-left: 0px;">
+                        <div class="tags">
+                            <span class="meta-heading">References</span>
+                            <a href="https://rdfmapped.com" rel="noreferrer noopener" target="_blank">Project website</a>
+                            <a href="https://github.com/almasen/rdf-mapped" rel="noreferrer noopener" target="_blank">GitHub repository</a>
+                            <span class="meta-heading">Tags</span>
+                            <a href="#about">About</a>
+                            <a href="#role">Role</a>
+                            <a href="#specs">Specs</a>
+                            <a href="#stack">Tech stack</a>
+                            <a href="#references">References</a>
+                            <span class="meta-heading">Date</span>
+                            <span>Apr - Aug 20</span>
+                            <span>cont. as Open Source</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    I can be contacted via the following channels:
+                    <div class="page-footer" style="border-top: unset; padding-top: 10px; padding-bottom: 5px;">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/danielmarkalmasi"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                rel="noreferrer noopener" target="_blank">
+                                <i class="icon ion-social-linkedin"></i>
+                            </a>
+                            <a href="javascript:getContactEmail();"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;">
+                                <i class="icon ion-email"></i>
+                            </a>
+                            <a href="https://github.com/almasen"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                rel="noreferrer noopener" target="_blank">
+                                <i class="icon ion-social-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <small class="form-text text-muted"><em>Please kindly note that for spam protection purposes, JavaScript is required for contact via email.</em></small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links">
+                <a href="../">Home</a>
+                <a href="../experience.html">Experience</a>
+                <a href="../projects.html">Projects</a>
+                <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener"
+                    target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/style.min.js"></script>
+
+
+    <script defer src="../assets/js/email.js"></script>
+    <script defer src="../assets/js/important.js"></script>
+</body>
+
+</html>

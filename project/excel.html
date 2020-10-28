@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>DTE Student Management Extension</title>
+    <meta name="description" content="Simple developer portfolio of Daniel Almasi">
+
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+
+    <style>
+        .anchor {
+            display: block;
+            height: 110px;
+            margin-top: -110px;
+            visibility: hidden;
+        }
+        .info a {
+            font-weight: bolder;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark portfolio-navbar">
+        <div class="container"><span class="navbar-brand logo">Daniel Almasi</span><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactModal" role="button" data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page project-page">
+        <section class="portfolio-block project" style="padding-top: 70px;">
+            <div class="container">
+                <!-- <div class="heading">
+                    <h2>project name</h2>
+                </div> -->
+                <div class="image" style="background-image:url(&quot;../assets/img/projects/header/excel.webp&quot;);"></div>
+                <div class="row">
+                    <div class="col-12 col-md-7 offset-md-1 info">
+                        <span class="anchor" id="about"></span>
+                        <h3>About DTE Student Management Extension</h3>
+                        <h5>Excel JavaScript Extension for DTE Student Management Database</h5>
+                        <p>The DTE Student Management Extension is a lightweight Office 365 Excel extension which provides a lightning fast user friendly interface for administering records in the DTE Student Management Database.</p>
+                        <h5>Reason</h5>
+                        <p>There has been a need for a central database for recording doctoral training partnership student records as the overall size of data has been increasing considerably and additionally the type of many data elements became three-dimensional. However, many DTP administrators have a strong preference for using native Excel applications rather than more complex database management apps that would support 3D data structures.</p>
+                        <h5>NoSQL Doctoral Training Partnership Database</h5>
+                        <p>As part of this project, I have developed a NoSQL database with a strongly typed interface to accommodate and centralise the various smaller databases and Excel tables. The database supports variable-type declaration, field description, data validation rules, field grouping and many more.</p>
+                        <h5>Comprehensive student record history</h5>
+                        <p>The database is designed to hold a full record history of all administered students: For any newly added or changed values, the date and the username of the administrator are recorded. This provides a practical interface where a student's history can be easily tracked throughout the duration of their studentship. Furthermore, in case of any errors, there is a simple option to roll back to a previous value.</p>
+                        <h5>Record lookup</h5>
+                        <p>A core feature of the application is how quickly and easily an individual or an entire list of students can be looked up. The application supports predictive search by a select number of identifiers or the name of the student(s). Moreover, access times are constant with only O(1) time being required to retrieve a student record.<br><br></p>
+                        <span class="anchor" id="role"></span>
+                        <h3>Role</h3>
+                        <p>I am responsible for the design, development and testing of the JavaScript Office Add-in as part of my software engineering work at the <a href="https://www.kcl.ac.uk/doctoralstudies" rel="noreferrer noopener" target="_blank">Centre for Doctoral Studies, King's College London</a>. The project is closed-source, Copyright &copy; 2020 <a href="https://www.kcl.ac.uk/study/doctoral-studies/doctoral-training-partnerships" rel="noreferrer noopener" target="_blank">Doctoral Training Partnerships, King's College London</a>.<br><br></p>
+                        <span class="anchor" id="specs"></span>
+                        <h3>Technical specifications</h3>
+                        <p>• NoSQL database<br>
+                        • constant O(1) record retrieval<br>
+                        • predictive search<br>
+                        • supports Excel Online<br>
+                        • SharePoint Online integrated<br>
+                        • supports batch uploads/updates<br>
+                        • quick export of GDPR compliant archives<br><br></p>
+                        <span class="anchor" id="stack"></span>
+                        <h3>Used technologies</h3>
+                        <p>NodeJS, TypeScript, Microsoft Office 365 JavaScript API<br><br></p>
+                        <span class="anchor" id="references"></span>
+                    </div>
+                    <div class="col-12 col-md-3 offset-md-1 meta" style="padding-left: 0px;">
+                        <div class="tags">
+                            <span class="meta-heading">Tags</span>
+                            <a href="#about">About</a>
+                            <a href="#role">Role</a>
+                            <a href="#specs">Specs</a>
+                            <a href="#stack">Tech stack</a>
+                            <span class="meta-heading">Date</span>
+                            <span>Aug 20 - Present</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    I can be contacted via the following channels:
+                    <div class="page-footer" style="border-top: unset; padding-top: 10px; padding-bottom: 5px;">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/danielmarkalmasi"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                rel="noreferrer noopener" target="_blank">
+                                <i class="icon ion-social-linkedin"></i>
+                            </a>
+                            <a href="javascript:getContactEmail();"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;">
+                                <i class="icon ion-email"></i>
+                            </a>
+                            <a href="https://github.com/almasen"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                rel="noreferrer noopener" target="_blank">
+                                <i class="icon ion-social-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <small class="form-text text-muted"><em>Please kindly note that for spam protection purposes, JavaScript is required for contact via email.</em></small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links">
+                <a href="../">Home</a>
+                <a href="../experience.html">Experience</a>
+                <a href="../projects.html">Projects</a>
+                <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener"
+                    target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/style.min.js"></script>
+
+
+    <script defer src="../assets/js/email.js"></script>
+    <script defer src="../assets/js/important.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>KCL Chess Society dynamic website</title>
+    <meta name="description" content="Simple developer portfolio of Daniel Almasi">
+
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+
+    <style>
+        .anchor {
+            display: block;
+            height: 110px;
+            margin-top: -110px;
+            visibility: hidden;
+        }
+
+        .info a {
+            font-weight: bolder;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark portfolio-navbar">
+        <div class="container"><span class="navbar-brand logo">Daniel Almasi</span><button data-toggle="collapse"
+                class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactModal" role="button"
+                            data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page project-page">
+        <section class="portfolio-block project" style="padding-top: 70px;">
+            <div class="container">
+                <!-- <div class="heading">
+                    <h2>project name</h2>
+                </div> -->
+                <div class="image"
+                    style="background-image:url(&quot;../assets/img/projects/header/chess.webp&quot;);"></div>
+                <div class="row">
+                    <div class="col-12 col-md-7 offset-md-1 info">
+                        <span class="anchor" id="about"></span>
+                        <h3>KCL Chess Society dynamic website</h3>
+                        <p>The KCL Chess Society dynamic website features news, event and tournament registration as well as member management. It was built as part of my 2nd Year BSc Software Engineering Project as a full-stack web application.</p>
+                        <h5>Design & development</h5>
+                        <p>The task required us to follow comprehensive software engineering design methodologies as well as programming design patterns. For the task, a list of user stories and internal design choices were provided, while execution was expected to be done by the student. Marks were awarded for functionality and code quality in equal proportions.</p>
+                        <h5>Core requirements</h5>
+                        <p>The site was required to act as a fully functional replacement for the King's College London Chess Society and ultimately had to feature sections with different access rights. The site needed to feature public-facing pages with a promotional purpose as well as an internal members area for event organisation and member management.</p>
+                        <h5>Member hierarchy</h5>
+                        <p>The site was also required to distinguish between and fully support members with different priviliges, such as officers, organisers, regular members and visitors. This required a hierarchical database structure as well as authentication and authorisation requests.<br><br></p>
+                        <span class="anchor" id="role"></span>
+                        <h3>Role</h3>
+                        <p>We were tasked with building a comprehensive, full-stack dynamic website on the LAMP stack as part of our 2nd Year BSc Computer Science programme at King's College London. I was relatively new to using PHP for backend, so the task required both research and execution from my end. Ultimately, I ended up scoring 90% on the assignment.<br><br></p>
+                        <span class="anchor" id="features"></span>
+                        <h3>Features</h3>
+                        <p>• public-facing pages & internal members area<br>
+                        • responsive design<br>
+                        • event & tournament organisation<br>
+                        • tournament administration<br>
+                        • chess ELO computation & roles<br>
+                        • member management (for admins)<br>
+                        • publication of news items<br><br></p>
+                        <span class="anchor" id="stack"></span>
+                        <h3>LAMP Stack</h3>
+                        <p>Linux, Apache, MySQL, PHP<br><br></p>
+                    </div>
+                    <div class="col-12 col-md-3 offset-md-1 meta" style="padding-left: 0px;">
+                        <div class="tags">
+                            <span class="meta-heading">Tags</span>
+                            <a href="#about">About</a>
+                            <a href="#role">Role</a>
+                            <a href="#features">Features</a>
+                            <a href="#stack">Tech stack</a>
+                            <span class="meta-heading">Date</span>
+                            <span>Nov - Dec 19</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    I can be contacted via the following channels:
+                    <div class="page-footer" style="border-top: unset; padding-top: 10px; padding-bottom: 5px;">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/danielmarkalmasi"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                rel="noreferrer noopener" target="_blank">
+                                <i class="icon ion-social-linkedin"></i>
+                            </a>
+                            <a href="javascript:getContactEmail();"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;">
+                                <i class="icon ion-email"></i>
+                            </a>
+                            <a href="https://github.com/almasen"
+                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
+                                rel="noreferrer noopener" target="_blank">
+                                <i class="icon ion-social-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <small class="form-text text-muted"><em>Please kindly note that </em></small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links">
+                <a href="../">Home</a>
+                <a href="../experience.html">Experience</a>
+                <a href="../projects.html">Projects</a>
+                <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener"
+                    target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/style.min.js"></script>
+
+
+    <script defer src="../assets/js/email.js"></script>
+    <script defer src="../assets/js/important.js"></script>
+</body>
+
+</html>
