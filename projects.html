@@ -23,6 +23,21 @@
         html {
             scroll-behavior: smooth;
         }
+        #activeNavLink {
+            color: #08c0c3;
+        }
+        #footerSection {
+            border-top: unset; 
+            padding-top: 10px; 
+            padding-bottom: 5px;
+        }
+        .page-footer .social-icons a {
+            font-size: 32px;
+            width: 58px;
+            height: 58px;
+            line-height: 58px;
+            background-color: #08c0c3;
+        }
     </style>
 </head>
 
@@ -34,7 +49,7 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link active" style="color: #08c0c3;" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" id="activeNavLink" href="#">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://cv.almasi.dev" target="_blank" rel="noreferrer noopener">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contactModal" role="button" data-toggle="modal">Contact</a></li>
                 </ul>
@@ -114,19 +129,15 @@
                 </div>
                 <div class="modal-body">
                     I can be contacted via the following channels:
-                    <div class="page-footer" style="border-top: unset; padding-top: 10px; padding-bottom: 5px;">
+                    <div class="page-footer" id="footerSection">
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/danielmarkalmasi"
-                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
-                                rel="noreferrer noopener" target="_blank">
+                            <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener" target="_blank">
                                 <i class="icon ion-social-linkedin"></i>
                             </a>
-                            <a href="#" id="emailLink" style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;">
+                            <a href="#" id="emailLink">
                                 <i class="icon ion-email"></i>
                             </a>
-                            <a href="https://github.com/almasen"
-                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
-                                rel="noreferrer noopener" target="_blank">
+                            <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">
                                 <i class="icon ion-social-github"></i>
                             </a>
                         </div>
@@ -146,8 +157,7 @@
                 <a href="experience.html">Experience</a>
                 <a href="#">Projects</a>
                 <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener"
-                    target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener" target="_blank">LinkedIn</a>
             </div>
         </div>
     </footer>

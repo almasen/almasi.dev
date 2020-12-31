@@ -23,6 +23,29 @@
         html {
             scroll-behavior: smooth;
         }
+        #activeNavLink {
+            color: #08c0c3;
+        }
+        #experienceBulletPoints {
+            padding-left: 8px;
+        }
+        #companyLogo {
+            width: 56px; 
+            height: 56px; 
+            opacity: 1;
+        }
+        #footerSection {
+            border-top: unset; 
+            padding-top: 10px; 
+            padding-bottom: 5px;
+        }
+        .page-footer .social-icons a {
+            font-size: 32px;
+            width: 58px;
+            height: 58px;
+            line-height: 58px;
+            background-color: #08c0c3;
+        }
     </style>
 </head>
 
@@ -33,7 +56,7 @@
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" style="color: #08c0c3;" href="#">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link active" id="activeNavLink" href="#">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://cv.almasi.dev" target="_blank" rel="noreferrer noopener">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contactModal" role="button" data-toggle="modal">Contact</a></li>
@@ -53,14 +76,14 @@
                             <div class="col-md-9">
                                 <h3>King's College London Centre for Doctoral Studies</h3>
                                 <h4 class="organization">Software Engineer</h4>
-                                <p class="text-muted" style="padding-left: 8px;">
+                                <p class="text-muted" id="experienceBulletPoints">
                                     • Developed, tested & deployed the RDFmapped website using NodeJS & Express<br>
                                     • Built a student management Office 365 extension via the Office JavaScript API<br>
                                     • Responsible for automating various internal workflows via Microsoft Graph</p>
                             </div>
                             <div class="col-md-3">
                                 <span class="period">Oct 2019 - Present</span><br>
-                                <img class="period" src="assets/img/logo/kcl.webp" alt="King's College London logo" style="width: 56px; height: 56px; opacity: 1;">
+                                <img class="period" src="assets/img/logo/kcl.webp" alt="King's College London logo" id="companyLogo">
                             </div>
                         </div>
                     </div>
@@ -69,13 +92,13 @@
                             <div class="col-md-9">
                                 <h3>King's College London Centre for Research Staff Development</h3>
                                 <h4 class="organization">Data Analyst</h4>
-                                <p class="text-muted" style="padding-left: 8px;">
+                                <p class="text-muted" id="experienceBulletPoints">
                                     • Implemented an automated analysis tool for the Careers in Research Online Survey<br>
                                     • Responsible for VB .NET development & design documentation</p>
                             </div>
                             <div class="col-md-3">
                                 <span class="period">Aug 2019 - Oct 2019</span><br>
-                                <img class="period" src="assets/img/logo/kcl.webp" alt="King's College London logo" style="width: 56px; height: 56px; opacity: 1;">
+                                <img class="period" src="assets/img/logo/kcl.webp" alt="King's College London logo" id="companyLogo">
                             </div>
                         </div>
                     </div>
@@ -84,7 +107,7 @@
                             <div class="col-md-9">
                                 <h3>The New York Academy of Sciences</h3>
                                 <h4 class="organization">Junior Researcher</h4>
-                                <p class="text-muted" style="padding-left: 8px;">
+                                <p class="text-muted" id="experienceBulletPoints">
                                     • Lead international project <em>Novus aer</em> to develop a smart grid system capable of reducing inefficient
                                     electricity consumption and thus CO2 emissions
                                     <br>• Developed C++ algorithm for monitoring energy usage of always-on appliances<br>
@@ -93,7 +116,7 @@
                             </div>
                             <div class="col-md-3">
                                 <span class="period">Sep 2016 - Aug 2018</span><br>
-                                <img class="period" src="assets/img/logo/nyas.webp" alt="New York Academy of Sciences logo" style="width: 56px; height: 56px; opacity: 1;">
+                                <img class="period" src="assets/img/logo/nyas.webp" alt="New York Academy of Sciences logo" id="companyLogo">
                             </div>
                         </div>
                     </div>
@@ -102,7 +125,7 @@
                             <div class="col-md-9">
                                 <h3>Uhans Hungary - UHANS Mobile</h3>
                                 <h4 class="organization">Java Developer Internship</h4>
-                                <p class="text-muted" style="padding-left: 8px;">
+                                <p class="text-muted" id="experienceBulletPoints">
                                     • Responsible for implementing and testing popular AOSP UI features in FreemeOS<br>
                                     • Discovered a disguised credential-stealer Trojan Agent on an upcoming firmware<br>
                                     • Built TWRP for the S1 model and released source on XDA Developers and Github<br>
@@ -111,7 +134,7 @@
                             </div>
                             <div class="col-md-3">
                                 <span class="period">May 2016 - Sep 2016</span><br>
-                                <img class="period" src="assets/img/logo/uhans.webp" alt="UHANS Mobile logo" style="width: 56px; height: 56px; opacity: 1;">
+                                <img class="period" src="assets/img/logo/uhans.webp" alt="UHANS Mobile logo" id="companyLogo">
                             </div>
                         </div>
                     </div>
@@ -120,7 +143,7 @@
                             <div class="col-md-9">
                                 <h3>TAP Budapest - Tailored Android Phones</h3>
                                 <h4 class="organization">Founder</h4>
-                                <p class="text-muted" style="padding-left: 8px;">
+                                <p class="text-muted" id="experienceBulletPoints">
                                     • Set up a small business aimed at making users’ smartphones more efficient<br>
                                     • Built custom operating systems tailored to clients' liking based on the AOSP<br>
                                     • Provided ongoing support for 20+ satisfied customers
@@ -128,7 +151,7 @@
                             </div>
                             <div class="col-md-3">
                                 <span class="period">Sep 2015 - May 2016</span><br>
-                                <img class="period" src="assets/img/logo/tap.webp" alt="Tailored Android Phones logo" style="width: 56px; height: 56px; opacity: 1;">
+                                <img class="period" src="assets/img/logo/tap.webp" alt="Tailored Android Phones logo" id="companyLogo">
                             </div>
                         </div>
                     </div>
@@ -148,19 +171,15 @@
                 </div>
                 <div class="modal-body">
                     I can be contacted via the following channels:
-                    <div class="page-footer" style="border-top: unset; padding-top: 10px; padding-bottom: 5px;">
+                    <div class="page-footer" id="footerSection">
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/danielmarkalmasi"
-                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
-                                rel="noreferrer noopener" target="_blank">
+                            <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener" target="_blank">
                                 <i class="icon ion-social-linkedin"></i>
                             </a>
-                            <a href="#" id="emailLink" style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;">
+                            <a href="#" id="emailLink">
                                 <i class="icon ion-email"></i>
                             </a>
-                            <a href="https://github.com/almasen"
-                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
-                                rel="noreferrer noopener" target="_blank">
+                            <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">
                                 <i class="icon ion-social-github"></i>
                             </a>
                         </div>
@@ -180,8 +199,7 @@
                 <a href="#">Experience</a>
                 <a href="projects.html">Projects</a>
                 <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener"
-                    target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener" target="_blank">LinkedIn</a>
             </div>
         </div>
     </footer>

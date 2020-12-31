@@ -31,6 +31,27 @@
         html {
             scroll-behavior: smooth;
         }
+        #mainProjectBlock {
+            padding-top: 70px;
+        }
+        #projectImage {
+            background-image: url("../assets/img/projects/header/chess.webp");
+        }
+        #tagColumn {
+            padding-left: 0px;
+        }
+        #footerSection {
+            border-top: unset; 
+            padding-top: 10px; 
+            padding-bottom: 5px;
+        }
+        .page-footer .social-icons a {
+            font-size: 32px;
+            width: 58px;
+            height: 58px;
+            line-height: 58px;
+            background-color: #08c0c3;
+        }
     </style>
 </head>
 
@@ -45,20 +66,18 @@
                     <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://cv.almasi.dev" target="_blank" rel="noreferrer noopener">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contactModal" role="button"
-                            data-toggle="modal">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactModal" role="button" data-toggle="modal">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="page project-page">
-        <section class="portfolio-block project" style="padding-top: 70px;">
+        <section class="portfolio-block project" id="mainProjectBlock">
             <div class="container">
                 <!-- <div class="heading">
                     <h2>project name</h2>
                 </div> -->
-                <div class="image"
-                    style="background-image:url(&quot;../assets/img/projects/header/chess.webp&quot;);"></div>
+                <div class="image" id="projectImage"></div>
                 <div class="row">
                     <div class="col-12 col-md-7 offset-md-1 info">
                         <span class="anchor" id="about"></span>
@@ -86,7 +105,7 @@
                         <h3>LAMP Stack</h3>
                         <p>Linux, Apache, MySQL, PHP<br><br></p>
                     </div>
-                    <div class="col-12 col-md-3 offset-md-1 meta" style="padding-left: 0px;">
+                    <div class="col-12 col-md-3 offset-md-1 meta" id="tagColumn">
                         <div class="tags">
                             <span class="meta-heading">Tags</span>
                             <a href="#about">About</a>
@@ -113,19 +132,15 @@
                 </div>
                 <div class="modal-body">
                     I can be contacted via the following channels:
-                    <div class="page-footer" style="border-top: unset; padding-top: 10px; padding-bottom: 5px;">
+                    <div class="page-footer" id="footerSection">
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/danielmarkalmasi"
-                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
-                                rel="noreferrer noopener" target="_blank">
+                            <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener" target="_blank">
                                 <i class="icon ion-social-linkedin"></i>
                             </a>
-                            <a href="#" id="emailLink" style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;">
+                            <a href="#" id="emailLink">
                                 <i class="icon ion-email"></i>
                             </a>
-                            <a href="https://github.com/almasen"
-                                style="font-size: 32px;width: 58px;height: 58px;line-height: 58px;background-color: #08c0c3;"
-                                rel="noreferrer noopener" target="_blank">
+                            <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">
                                 <i class="icon ion-social-github"></i>
                             </a>
                         </div>
@@ -145,8 +160,7 @@
                 <a href="../experience.html">Experience</a>
                 <a href="../projects.html">Projects</a>
                 <a href="https://github.com/almasen" rel="noreferrer noopener" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener"
-                    target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/danielmarkalmasi" rel="noreferrer noopener" target="_blank">LinkedIn</a>
             </div>
         </div>
     </footer>
