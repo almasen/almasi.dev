@@ -15,8 +15,10 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="assets/css/font.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link href="assets/css/font.min.css" rel="preload" as="style" id="preloadFontStyles">
+    <noscript><link rel="stylesheet" href="assets/css/font.min.css"></noscript>
+    <link href="assets/fonts/ionicons.min.css" rel="preload" as="style" id="preloadIconStyles">
+    <noscript><link rel="stylesheet" href="assets/fonts/ionicons.min.css"></noscript>
 
 
     <style>
@@ -203,6 +205,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/loadstyles.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/style.min.js"></script>
     <script defer src="assets/js/email.min.js"></script>
