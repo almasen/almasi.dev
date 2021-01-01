@@ -14,9 +14,11 @@
 
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/font.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link href="assets/css/font.min.css" rel="preload" as="style" id="preloadFontStyles">
+    <noscript><link rel="stylesheet" href="assets/css/font.min.css"></noscript>
+    <link href="assets/fonts/ionicons.min.css" rel="preload" as="style" id="preloadIconStyles">
+    <noscript><link rel="stylesheet" href="assets/fonts/ionicons.min.css"></noscript>
 
     <style>
         html {
@@ -33,6 +35,14 @@
         }
         #avatarImage {
             background-image: url("assets/img/avatar/avatar.webp");
+        }
+        #mainButton {
+            color: #32818E;
+            border-color: #32818E;
+        }
+        #mainButton:hover{
+            color: #fff;
+            border-color: #08c0c3;
         }
         #extraInfo {
             padding-bottom: 2%;
@@ -83,8 +93,8 @@
                 <div class="about-me">
                     <p><strong>Hello!</strong> My name is Daniel. I am an Undergraduate reading Computer Science at
                         King's College London and am experienced in Software Engineering principles with a focus on
-                        Backend Development.</p><a class="btn btn-outline-primary" role="button"
-                        href="projects.html">Check out my simple portfolio</a>
+                        Backend Development.</p>
+                        <a class="btn btn-outline-primary" role="button" id="mainButton" href="projects.html">Check out my simple portfolio</a>
                 </div>
             </div>
         </section>
@@ -140,6 +150,7 @@
             </div>
         </div>
     </footer>
+    <script defer src="assets/js/loadstyles.min.js"></script>
     <script defer src="assets/js/jquery.min.js"></script>
     <script defer src="assets/js/style.min.js"></script>
     <script defer src="assets/js/email.min.js"></script>
