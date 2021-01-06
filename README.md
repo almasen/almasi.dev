@@ -6,10 +6,10 @@
 [![Mozilla HTTP Observatory Grade](https://img.shields.io/badge/observatory-A%2b%20%28125%2f100%29-brightgreen?style=flat-square&logo=mozilla)](https://observatory.mozilla.org/analyze/almasi.dev)
 [![Security Headers](https://img.shields.io/security-headers?color=brightgreen&label=headers&style=flat-square&url=https%3A%2F%2Falmasi.dev)](https://securityheaders.com/?q=https%3A%2F%2Falmasi.dev)
 [![Qualys SSL Labs](https://img.shields.io/badge/Qalys-A%2b-brightgreen?style=flat-square)](https://www.ssllabs.com/ssltest/analyze.html?d=almasi.dev)
-[![TLS imirhil score](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=TLS%20Score&query=result.hosts.0.grade.details.score&url=https%3A%2F%2Ftls.imirhil.fr%2Fhttps%2Falmasi.dev.json&style=flat-square)](https://tls.imirhil.fr/https/almasi.dev)
+[![TLS imirhil score](https://img.shields.io/badge/TLS%20Score-100-brightgreen?style=flat-square)](https://tls.imirhil.fr/https/almasi.dev)
 [![HSTS Preload](https://img.shields.io/badge/HSTS-%E2%9C%93-brightgreen?style=flat-square&logo=google%20chrome&logoColor=white)](https://hstspreload.org/?domain=almasi.dev)
 
-My simple portfolio website.
+My minimalistic portfolio website.
 
 Just some plain HTML, CSS & JS.
 
