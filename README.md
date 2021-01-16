@@ -1,7 +1,7 @@
 # almasi.dev
 
 [![Website status](https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=brightgreen&up_message=up&url=https%3A%2F%2Falmasi.dev)](https://almasi.dev)
-[![Homepage Size](https://img.shields.io/badge/size-498%20kB-blue?style=flat-square)](https://almasi.dev)
+[![Homepage Size](https://img.shields.io/badge/size-498%20kB-blue?style=flat-square)](https://1mb.club)
 [![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100-brightgreen?style=flat-square&logo=Lighthouse)](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Falmasi.dev%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext)
 [![Mozilla HTTP Observatory Grade](https://img.shields.io/badge/observatory-A%2b%20%28125%2f100%29-brightgreen?style=flat-square&logo=mozilla)](https://observatory.mozilla.org/analyze/almasi.dev)
 [![Security Headers](https://img.shields.io/security-headers?color=brightgreen&label=headers&style=flat-square&url=https%3A%2F%2Falmasi.dev)](https://securityheaders.com/?q=https%3A%2F%2Falmasi.dev)
