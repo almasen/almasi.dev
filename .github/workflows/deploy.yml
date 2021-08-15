@@ -12,7 +12,7 @@ jobs:
       - name: Checkout GitHub repository
         uses: actions/checkout@master
 
-      - name: ssh deploy
+      - name: Deploy Live Website
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
